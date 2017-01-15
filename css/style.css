@@ -1,0 +1,23 @@
+body {
+	margin:1rem;
+}
+
+.white-space-pre {
+    white-space: pre-wrap;
+}
+.newrow {
+	algin: 0 auto;
+}
+
+form {
+	margin:auto;
+	width:80%;
+}
+
+.apptitle {
+	text-align: center;
+}
+
+#output {
+	margin:1rem;
+}

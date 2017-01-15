@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Song Lyrics Lookup</title>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<div class="apptitle">
+		<h1 class="apptitle">Lyrics Locator</h1>
+		<p>Enter the name of an artist and a song title.  I will show you the lyrics</p>
+
+	</div>
+		<form class="form-horizontal">
+
+	<p>
+		<label for="artistname">Artist Name</label>
+	<input class="form-control" type="text" name="artistname" id="artistname" placeholder="Taylor Swift">
+</p>
+<p>
+	<label for="songtitle">Song title</label>
+	<input class="form-control" type="text" name="songtitle" id="songtitle" placeholder="Shake it off">
+</p>
+	<button class="btn btn-primary btn-block" type="submit" name="button" id="getapibutton">Find Lyrics</button>
+
+</form>
+	<template id="template">
+
+		<p>Lyrics: {{lyrics_body}}</p>
+
+
+
+
+	</template>
+
+
+	<div class="newrow"></div>
+	<div id="output">
+				<div class="panel panel-default">
+				  <div id="artistplacement" class="panel-heading">I will show</div>
+				  <div id="songplacement"  class="panel-body">the lyrics here</div>
+				</div>
+	</div>
+
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+	<script src="js/javascript.js"></script>
+	<script src="node_modules/mustache/mustache.min.js"></script>
+
+	</body>
+</html>
